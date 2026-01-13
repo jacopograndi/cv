@@ -14,9 +14,12 @@
 
 \usepackage{xcolor}
 \pagecolor[rgb]{0.04,0.04,0.04}
-\definecolor{coolorange}{rgb}{1.0, 0.4, 0.0}
-\definecolor{coolred}{rgb}{1.0, 0.0, 0.0}
+\definecolor{coolorange}{rgb}{1.0, 0.7, 0.2}
+\definecolor{coolred}{rgb}{1.0, 0.3, 0.3}
 \color[rgb]{1,1,1}
+
+\usepackage{enumitem}
+\setlist[itemize]{noitemsep}
 
 \usepackage{tikz}
 \usetikzlibrary{calc}
@@ -25,13 +28,6 @@
 \setlength{\parindent}{0in}
 \thispagestyle{empty} 
 {\fontfamily{pcr}\selectfont
-
-\begin{tikzpicture}[overlay,]
-\draw [white,line width=10.0pt, rounded corners=2pt,]
-    ($ (current page.north west) + (0.0cm,-0.0cm) $)
-    rectangle
-    ($ (current page.south east) + (-0.0cm,0.0cm) $);       
-\end{tikzpicture}
 
 \begin{multicols}{2}
 
@@ -42,76 +38,91 @@
 		\begin{Huge}\textbf{Jacopo Grandi} \end{Huge} \\
 		\vfill
 
-		Via Carlo Emilio Gadda 8, Monza \\
+		Location: Milan, Italy \\
 		Email: jacopo.grandi@outlook.it \\
-		\textcolor{coolred} { Portfolio: \url{https://github.com/jacopograndi}} \\
+		Github: \textcolor{coolred} { \url{https://github.com/jacopograndi}} \\
 		Phone: 377 3193747 \\
 	\end{flushright}
 \end{multicols}
 
 \vspace{0.3in}
 
-\begin{Large} \textcolor{coolorange} { Education } \end{Large} \\
+\begin{Large} \textcolor{coolorange} { Experience } \end{Large} \\
 
 \medskip
 
-Master Degree in Computer Science (2016 - 2021 Politecnico di Milano) \\
-
-\vspace{0.25in}
-
-
-\begin{Large} \textcolor{coolorange} { Team Game Projects } \end{Large}
+\textbf{R\&D Online Programmer} (2021 - 2026) at \textcolor{coolred} { \href{https://milestone.it/}{Milestone}} \\
+\vspace{0.1in}
+Worked on: \\
 \begin{itemize}
-\item \textcolor{coolred} { \href{https://github.com/soulsofarmony/PurpleSunsetHotel} {Purple Sunset Hotel}}(2021) - Lead Developer \\
-	Procedural roguelike multiplayer coop game similar to The Binding of Isaac.
-		Developed in \textbf{Unity} along 2 other programmers. The game uses Unity's HLAPI.
-
-\item \textcolor{coolred} { \href{https://polimi-game-collective.itch.io/i-will-find-you} {I Will Find You}}(2020) - Gameplay and Graphics Programmer \\
-	Exploration game with 5 levels, each with a different minigame.
-		Developed in \textbf{Unity} in a team of 5.
-
-\item \textcolor{coolred} { \href{https://github.com/Astervista/ing-sw-2019-Fiora-Gatta-Grandi} {Adrenaline}}(2019) - Network Programmer \\
-		Developed for the bachelor thesis with 2 other programmers in \textbf{Java} using remote procedure calls and sockets.
-
+	\item Unreal Engine 4 and UE5, extending it and fixing bugs in it \\
+	\item Maintenance of internal tools and libraries, lots of debugging in async C++20 code \\
+	\item Online systems, networking, voicechat and user interfaces \\
+	\item AWS fleet and resources management; MongoDB, Redis and a custom java backend \\
+	\item Multiplatform code (linux, windows, xbox, playstation, switch, steam deck) \\
+	\item Shipped Hotwheels 2, Ride4, Ride5, Ride6, Screamer, Supercross7, MotoGP23 to MotoGP26 \\
 \end{itemize}
 
 \vspace{0.2in}
 
-\begin{Large} \textcolor{coolorange} { Solo Game Projects } \end{Large}
+\begin{Large} \textcolor{coolorange} { Education } \end{Large} \\
+
+\vspace{0.1in}
+
+\textbf{Master Degree in Computer Science} (2016 - 2021) at Politecnico di Milano, score 103/110 \\
+
+\vspace{0.2in}
+
+\begin{Large} \textcolor{coolorange} { Personal Projects } \end{Large}
 \begin{itemize}
-	\item \textcolor{coolred} { \href{https://github.com/jacopograndi/radio} { Master Thesis}}(2021) \textbf{Unity}
-		: Asymmetrical multiplayer serious game
-	\item \textcolor{coolred} { \href{https://github.com/jacopograndi/arena} { Arena}}(2020) \textbf{C, SDL2}
-		: Autochess with personalizable units
-	\item \textcolor{coolred} { \href{https://github.com/jacopograndi/age} { Age}}(2020) \textbf{C++, SDL2}
-		: Reimplementation of Age of Empires DS
-	\item \textcolor{coolred} { \href{https://github.com/jacopograndi/td} { Experimental C Game Engine}}(2019) \textbf{C, OpenGL, PortAudio}
-	\item \textcolor{coolred} { \href{https://github.com/jacopograndi/slay2} { Slay}}(2019) \textbf{Python}
+	\item \textcolor{coolred} { \href{https://github.com/jacopograndi/tage} { Age of Empires TUI }}(2024) : Remake of the Nintendo DS version in \textbf{Rust}
+	\item \textcolor{coolred} { \href{https://github.com/jacopograndi/tiling} { Tiling}}(2026) : Small game showcasing the engine i'm working on in \textbf{Rust, Miniquad}
+	\item \textcolor{coolred} { \href{https://github.com/jacopograndi/voxel-experiment} { McRs}}(2025) : Voxel renderer and continuous physics in \textbf{Rust, Bevy}
+	\item \textcolor{coolred} { \href{https://github.com/jacopograndi/bvj-6} { Zener Castle}}(2025) : Game made in 7 days for the bevy game jam in \textbf{Rust, Bevy}
+	\item \textcolor{coolred} { \href{https://github.com/jacopograndi/ld54} { Zero Percent}}(2023) : Game made in 2 days for the ludum dare jam in \textbf{Rust, Bevy}
+	\item \textcolor{coolred} { \href{https://github.com/jacopograndi/radio} { Master Thesis}}(2021)
+		: Asymmetrical multiplayer game in \textbf{C\#, Unity}
+	\item \textcolor{coolred} { \href{https://github.com/jacopograndi/arena} { Arena}}(2020)
+		: Autochess with personalizable units in \textbf{C, SDL2}
+	\item \textcolor{coolred} { \href{https://github.com/jacopograndi/td} { Experimental C Game Engine}}(2019) using \textbf{C, OpenGL, PortAudio}
+	\item \textcolor{coolred} { \href{https://github.com/jacopograndi/slay2} { Slay}}(2019)
 		: Reimplementation of Slay by Sean O'Connor
-
+		in \textbf{Python}
 \end{itemize}
 
 \vspace{0.2in}
 
-\begin{Large} \textcolor{coolorange} { Skills } \end{Large}
-\begin{itemize}
-	\item \textcolor{coolred} {Networking:} \\
-	UDP and TCP Sockets, RPC, High level libraries (Unity HLAPI) \\
-	Netcode (lockstep, delay, input and state synchronization, latency hiding, frame interpolation)
+\begin{Large} \textcolor{coolorange} { Skills breakdown } \end{Large}
+\vspace{0.1in}
 
-	\item \textcolor{coolred} {Game Engines:} \\
-	\textbf{Unity} (5 years), \textbf{Godot} (1 year), Bevy (<1 year) \\
+	\textbf{Programming Languages:} \\
+\vspace{0.05in}
+	Main: Rust (5 year), C++(6 years), C, C\#, Python, Java \\
+	Minor: Javascript (frontends in general), Functional (Haskell, Erlang, Scheme), Esolangs
+\vspace{0.1in}
 
-	\item \textcolor{coolred} {Graphics knowledge:} \\
-	OpenGL (C, C++, python bindings, Rust) \\
-	SDL2, XNA (monogame), HTML5, Pygame \\ 
-	\textbf{Blender} (modeling, sculpting, animation) 
+	\textbf{Networking:} \\
+\vspace{0.05in}
+	I know how to integrate third party function calls in an asyncronous runtime. \\
+	I implemented a lot of fast UDP based protocols (reliable, large packet fragmentation). \\
+	I know how to use and implement a web api using HTTP requests or websockets. \\
+\vspace{0.1in}
 
-	\item \textcolor{coolred} {Programming Languages:} \\
-	Python (7 years), C (5 years), C\# (5 years), C++ (2 years), Java (2 years), GLSL (<1 year), Rust (<1 year)
+	\textbf{Graphics:} \\
+\vspace{0.05in}
+	Webgpu (Rust) Distance Fields \textcolor{coolred} { \url{https://github.com/jacopograndi/shader-practice}} \\
+	Bevy (Rust) Voxels \textcolor{coolred} { \url{https://github.com/jacopograndi/voxel-experiment}} \\
+	OpenGL using various languages (Rust, C, C++, python bindings, GLSL, GLES) \\
+	Platforms: X11, Wayland, WinApi, Android, Wasm,  \\
+	Libraries: SDL2, XNA (monogame), HTML5, Pygame, LWJGL (the one minecraft used), Miniquad \\ 
+	Tools: Blender (modeling, sculpting, animation)
+\vspace{0.1in}
 
-	\item \textcolor{coolred} {Other experiences:} \\
-		\textbf{Web Development} (HTML, Css, Javascript, Json, SQL, Postgres, REST, nodejs), \textbf{Git}, \textbf{Test Driven Development}, Linux
-\end{itemize}
+	\textbf{Game Engines:} \\
+\vspace{0.05in}
+	I'm working on my own engine in rust (using miniquad as the only dependency). \\
+	Unreal Engine 4 and 5 (4 years), Bevy (4 years), Unity (5 years), Godot (1 year) \\
+\vspace{0.1in}
+
 }
 \end{document}
